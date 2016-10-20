@@ -20,6 +20,8 @@
         while(it.hasNext()) {
             out.print("<br>" + it.next());
        }
+        int SessionNumber = (Integer)request.getAttribute("Active_Sessions");
+        out.print("<br>Users loged-in: " + SessionNumber);
         %>
         </div>
         <form method="POST" action="BeerSelect.do" >
