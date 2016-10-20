@@ -5,12 +5,13 @@
  */
 package com.example.web;
 
-import com.example.model.*;
+import com.example.model.BeerExpert;
 import java.util.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.*;
 import javax.servlet.http.*;
+
 
 /**
  *
@@ -23,7 +24,7 @@ public class BeerSelect extends HttpServlet {
 
         String c = request.getParameter("color");
         BeerExpert be = new BeerExpert();
-        List result = be.getBrands(c);
+        List<String> result = be.getBrands(c);
     
         request.setAttribute("styles", result);
         RequestDispatcher view = request.getRequestDispatcher("results.jsp");

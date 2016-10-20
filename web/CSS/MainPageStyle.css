@@ -5,8 +5,23 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
+div {
+    color: burlywood
+}
 h1 {
+    color: black;
+    margin-left: 20px;
+}
+form {
     color: burlywood;
     margin-left: 20px;
+}
+select {
+    color: brown;
+}
+option {
+    color: black;
+}
+input {
+    color: brown;
 }

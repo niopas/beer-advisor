@@ -3,13 +3,14 @@ package com.example.model;
 import java.util.*;
 
 public class BeerExpert {
-    public List getBrands(String color) {
+    public List<String> getBrands(String color) {
 
-    List brands = new ArrayList();
+    List<String> brands = new ArrayList<String>();
 
         switch (color) {
             case "amber":
                 brands.add("Tröegs Nugget Nectar");
+                brands.add("Zoe");
                 brands.add("Tocobaga Red Ale");
                 break;
             case "dark":
@@ -18,10 +19,12 @@ public class BeerExpert {
                 brands.add("Dogfish Head");
                 break;
             case "light":
+                brands.add("Sam Adams Light");
                 brands.add("Amstel Light");
                 brands.add("Bud Light");
                 break;
             case "brown":
+                brands.add("Founders Sumatra Mountain Brown");
                 brands.add("Cubano-Style Espresso Brown Ale");
                 brands.add("Samuel Smith's Nut Brown Ale");
                 break;
